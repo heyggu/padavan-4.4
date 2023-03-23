@@ -195,6 +195,13 @@ function done_validating(action){
 
 										</tr>
 										<tr>
+										<th>Allowed-ips（格式 0.0.0.0/0)</th>
+				<td>
+					<input type="text" class="input" name="wireguard_allowed_ips" id="wireguard_allowed_ips" style="width: 200px" value="<% nvram_get_x("","wireguard_allowed_ips"); %>" />
+				</td>
+
+										</tr>
+										<tr>
 											<td colspan="4" style="border-top: 0 none;">
 												<br />
 												<center><input class="btn btn-primary" style="width: 219px" type="button" value="<#CTL_apply#>" onclick="applyRule()" /></center>
